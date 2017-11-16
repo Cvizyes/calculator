@@ -1,0 +1,11 @@
+.div-class{
+	text-align: center;
+	max-width:175px;
+	background-color: #000;
+}
+.button{
+	width: 54px;
+	height: 50px;
+	background-color:#3FA4A1 ;
+	color: #000000 ;
+}

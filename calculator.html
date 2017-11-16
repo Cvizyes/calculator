@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div class="container">
+		<div id="main">
+			 	<button class="changeMode" v-on:click="changeMode = !changeMode">
+			   <p v-show="changeMode">Show Advanced Mode     ⚈</p>
+			    <p v-show="!changeMode">Show Basic Mode     ⚆</p>
+			  </button> 
+			<div class="results div-class ">
+				<div class="basic-mode" v-show="!changeMode" >  
+				</div>  
+				<input class="input" v-model="current">
+				<button class="button" v-on:click=press>9</button>
+				<button class="button" v-on:click=press>8</button>
+				<button class="button" v-on:click=press>7</button>
+				<button class="button" v-on:click=press>6</button>
+				<button class="button" v-on:click=press>5</button>
+				<button class="button" v-on:click=press>4</button>
+				<button class="button" v-on:click=press>3</button>
+				<button class="button" v-on:click=press>2</button>
+				<button class="button" v-on:click=press>1</button>
+				<button class="button equal-sing" v-on:click=press>=</button>
+				<button class="button" v-on:click=press>C</button>
+				<button class="button" v-on:click=press>*</button>
+				<button class="button" v-on:click=press>/</button>
+				<button class="button" v-on:click=press>√</button>
+				<button class="button" v-on:click=press>x ²</button>
+			</div>
+		</div>
+</div>
+		
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script> 
+<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
